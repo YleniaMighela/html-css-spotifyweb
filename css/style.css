@@ -3,3 +3,51 @@
     padding:0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* BLOCCO PRINCIPALE MACRO STRUTTURA */
+
+#macro-container{
+    display:flex;
+    height:calc(100vh - 100px);
+    /* DEBUG */
+    /* background-color: rgb(236, 24, 208); */
+}
+
+
+
+/* MACRO BLOCCO DI NAVIGAZIONE */
+#macro-container nav{
+    height: 100%;
+    width:250px;
+    /* DEBUG */
+    background-color: yellow;
+
+}
+
+
+
+
+/* CONTENUTO PRINCIPALE MAIN */
+#macro-container main{
+    height: 100%;
+    width:calc(100% - 250px);
+    /* DEBUG */
+    background-color: cadetblue;
+
+}
+
+
+
+
+/* MACRO BLOCCO INFERIORE  */
+
+#controller{
+    height:100px;
+    background-color:#282828;
+}
