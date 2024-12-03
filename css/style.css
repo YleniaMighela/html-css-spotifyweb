@@ -22,7 +22,7 @@ body{
 
 
 /* MACRO BLOCCO DI NAVIGAZIONE */
-#macro-container nav{
+#macro-container #left-navigation{
     height: 100%;
     width:250px;
     background-color: #000000;
@@ -45,8 +45,8 @@ body{
     display: flex;
     justify-content:end;
     align-items: center;
-    width:84%;
-    height:80px;
+    width:calc(100% - 250px);
+    height:60px;
     background-color: #080b126b;
     position:fixed;
     top:0;
@@ -62,6 +62,33 @@ button{
     padding:10px 40px;
     margin:0 10p;
 }
+
+/* blocco navigazione main  */
+
+
+.link-main{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    margin:8%;
+
+}
+
+.link-main li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #72747a;
+}
+
+
+
+
+
+
+
 
 
 /* MACRO BLOCCO INFERIORE  */
@@ -82,6 +109,11 @@ button{
 
 /* layout tablet */
 @media screen and (max-width:768px){
+
+    #container-upgrade{
+        display: block;
+    }
+
     
 }
 
@@ -100,10 +132,11 @@ button{
 
 
 /* layout small mobile */
+
 @media screen and (max-width:320px){
 
   /* MACRO BLOCCO DI NAVIGAZIONE */
-#macro-container nav{
+#macro-container #left-navigation{
     width:60px;
 
 }
