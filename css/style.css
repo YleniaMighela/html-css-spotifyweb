@@ -52,7 +52,7 @@ body{
     top:0;
     right: 0;
     
-   
+    
 }
 
 button{
@@ -63,25 +63,70 @@ button{
     margin:0 10p;
 }
 
+
 /* blocco navigazione main  */
-
-
 .link-main{
     display: flex;
-    justify-content: space-between;
-    gap:30px;
-    margin:8%;
-
+    justify-content:center;
+    margin:6%;
+    
 }
 
 .link-main li {
     list-style: none;
+    margin:15px 10px;
 }
 
 a{
+    font-size:10px;
     text-decoration: none;
     color: #72747a;
 }
+
+
+/* blocco visti recentemente */
+h2{
+    color:white;
+    margin:15px;
+}
+
+.row{
+    margin:15px 10px;
+    display:flex;
+    justify-content:space-around ;
+
+}
+
+.cover{
+    width:calc(100% /6 );
+    text-align: center;
+    margin:10px;
+}
+
+.cover img{
+    max-width:100%;
+    margin-bottom:10px;
+}
+
+.title{
+color:white;
+margin-bottom:5px;
+}
+
+.subtitle{
+color:#7d7f84;
+font-size:12px;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,24 +150,38 @@ a{
 
 
 
+
+
+
 /* RESPONSIVE */
 
-/* layout tablet */
-@media screen and (max-width:768px){
-
+/* LAYOUT TABLET */
+@media screen and (max-width:968px){
+    
     #container-upgrade{
         display: block;
     }
 
     
-}
+    /* blocco navigazione main  */
+    .link-main {
+        flex-wrap: wrap; 
+        margin:15%;
+        
+    }
+    
+    /* PRIMO BLOCCO : VISTI RECENTEMENTE */
+    .row{
+        justify-content:start;
+        gap:10px;
+        flex-wrap:wrap;
+    
+    }
 
-
-
-
-
-/* layout medium mobile */
-@media screen and (max-width:468px){
+    .cover{
+        width:calc(100% /5 );
+      
+    }
     
 }
 
@@ -130,26 +189,57 @@ a{
 
 
 
+/* LAYPUT MEDIUM MOBILE */
+@media screen and (max-width:668px){
+    
+    /* blocco navigazione main  */ 
+    .link-main li{
+        flex-wrap:nowrap;
+        flex-basis:25%;
+        
+    }
+    
+          /* PRIMO BLOCCO : VISTI RECENTEMENTE */
 
-/* layout small mobile */
-
-@media screen and (max-width:320px){
-
-  /* MACRO BLOCCO DI NAVIGAZIONE */
-#macro-container #left-navigation{
-    width:60px;
-
+          .cover{
+            width:calc(100% /3);
+          
+        }
 }
+
+
+
+
+
+
+/* LAYOUT SMALL MOBILE */
+
+@media screen and (max-width:420px){
+    
+    /* MACRO BLOCCO DI NAVIGAZIONE */
+    #macro-container #left-navigation{
+        width:60px;
+        
+    }
+    
+    /* CONTENUTO PRINCIPALE MAIN */
+    #macro-container main{
+        
+        width:calc(100% - 60px);
+        
+        
+    }
+    
+    .link-main {
+        flex-wrap: wrap; 
+        /* flex-basis:calc(100% / 4); */
+        margin:15%;
+        
+    }
+    
+
+
   
-/* CONTENUTO PRINCIPALE MAIN */
-#macro-container main{
-   
-    width:calc(100% - 60px);
-   
-    
-}
-
-
-
+        
 }
 
