@@ -248,6 +248,7 @@ h2{
     display: flex;
     align-items: center;
     margin-left:15px;
+    flex-basis:20%;
    
 }
 
@@ -268,8 +269,60 @@ h5{
  .controller-dx i{
     color:#878787;
     margin:10px;
+   
 
 }
+
+/* contenuto centrale */
+.controller-centrale{
+    text-align: center;
+    /* flex-basis:60%; */
+
+
+}
+
+.button-play i{
+    color:white;
+    margin:10px;
+}
+
+.loading {
+    
+    height:5px;
+    background-color: #5a5a5a;
+}
+
+.listened{
+    height: 5px;
+    background-color: #7d7f84;
+}
+
+.loading.music{
+    width:300px;
+}
+
+.listened.music{
+    width:50px;
+}
+
+/* contenuto sinistro */
+
+
+.controller-sx{
+    flex-basis: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
