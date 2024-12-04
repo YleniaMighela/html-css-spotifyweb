@@ -230,13 +230,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
 /* MACRO BLOCCO INFERIORE  */
 
 #controller{
@@ -312,9 +305,6 @@ h5{
 
 
 
-
-
-
 /* contenuto sinistro */
 
 .controller-sx{
@@ -337,24 +327,32 @@ h5{
 
 
 
-
-
-
-
 /* RESPONSIVE */
 
 /* LAYOUT TABLET */
-@media screen and (max-width:968px){
-    
+@media screen and (max-width:878px){
+
+    /* blocco upgrade */
     #container-upgrade{
         display: block;
+        position: relative;
+        width: 100%;
     }
     
+
+button{
+   position: absolute;
+   top:2px;
+   right:0;
+}
+
     
     /* blocco navigazione main  */
+
     .link-main {
         flex-wrap: wrap; 
-        margin:15%;
+        flex-basis: calc( 100% / 4 );
+        /* margin:15%; */
         
     }
     
