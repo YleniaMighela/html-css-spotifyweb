@@ -84,7 +84,7 @@ a{
 }
 
 
-/* blocco visti recentemente */
+/* PRIMO BLOCCO : VISTI RECENTEMENTE */
 h2{
     color:white;
     margin:15px;
@@ -94,7 +94,7 @@ h2{
     margin:15px 10px;
     display:flex;
     justify-content:space-around ;
-
+    
 }
 
 .cover{
@@ -109,24 +109,39 @@ h2{
 }
 
 .title{
-color:white;
-margin-bottom:5px;
+    color:white;
+    margin-bottom:5px;
 }
 
 .subtitle{
-color:#7d7f84;
-font-size:12px;
-
+    color:#7d7f84;
+    font-size:12px;
+    
 }
 
 
 
 
+/* SECONDO BLOCCO : CREATO PER  */
+
+.suggestions{
+    color:#7d7f84;
+    font-size:13px;
+    font-weight: 600;
+    margin:0 15px;
+}
+
+.second-row{
+    justify-content: start;
+}
 
 
 
+/* TERZO BLOCCO : ARTISTI POPOLARI */
 
-
+.border-img{
+    border-radius: 99999px;
+}
 
 
 
@@ -161,7 +176,7 @@ font-size:12px;
     #container-upgrade{
         display: block;
     }
-
+    
     
     /* blocco navigazione main  */
     .link-main {
@@ -175,12 +190,12 @@ font-size:12px;
         justify-content:start;
         gap:10px;
         flex-wrap:wrap;
-    
+        
     }
-
+    
     .cover{
         width:calc(100% /5 );
-      
+        
     }
     
 }
@@ -199,12 +214,12 @@ font-size:12px;
         
     }
     
-          /* PRIMO BLOCCO : VISTI RECENTEMENTE */
-
-          .cover{
-            width:calc(100% /3);
-          
-        }
+    /* PRIMO BLOCCO : VISTI RECENTEMENTE */
+    
+    .cover{
+        width:calc(100% /3);
+        
+    }
 }
 
 
@@ -237,9 +252,9 @@ font-size:12px;
         
     }
     
-
-
-  
-        
+    
+    
+    
+    
 }
 
