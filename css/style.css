@@ -58,6 +58,7 @@ h4{
     margin:0 10px;
     overflow: auto;
     height: calc(100% - 250px);
+    position: relative;
 }
 
 .fa-plus{
@@ -78,6 +79,9 @@ h4{
 
 .nav-down{
     margin:10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #download{
