@@ -27,7 +27,7 @@ body{
 /* MACRO BLOCCO DI NAVIGAZIONE LATERALE */
 #macro-container #left-navigation{
     height: 100%;
-    width:250px;
+    width:200px;
     background-color: #000000;
     
 }
@@ -120,7 +120,7 @@ hr{
 #macro-container main{
     overflow: auto;
     height: 100%;
-    width:calc(100% - 250px);
+    width:calc(100% - 200px);
     background-color:#141922;
     
 }
@@ -130,7 +130,7 @@ hr{
     display: flex;
     justify-content:end;
     align-items: center;
-    width:calc(100% - 250px);
+    width:calc(100% - 200px);
     height:60px;
     background-color: #080b126b;
     position:fixed;
@@ -288,37 +288,47 @@ h5{
 .button-play i{
     color:white;
     margin:10px;
+    font-size:15px;
+}
+
+.minute{
+    font-size:10px;
+    color: white;
+    margin:10px;
 }
 
 .loading {
-    
+    display: inline-block;
     height:5px;
     background-color: #5a5a5a;
+    border-radius: 10px;
 }
 
-.listened{
-    height: 5px;
-    background-color: #7d7f84;
-}
 
 .loading.music{
-    width:300px;
+    width:250px;
 }
 
-.listened.music{
-    width:50px;
-}
+
+
+
+
+
 
 /* contenuto sinistro */
 
-
 .controller-sx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: end;
     flex-basis: 20%;
 }
 
 
-
+ .loading.music-due{
+    width:100px;
+}
 
 
 
