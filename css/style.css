@@ -21,7 +21,10 @@ body{
 
 
 
-/* MACRO BLOCCO DI NAVIGAZIONE */
+
+
+
+/* MACRO BLOCCO DI NAVIGAZIONE LATERALE */
 #macro-container #left-navigation{
     height: 100%;
     width:250px;
@@ -29,6 +32,82 @@ body{
     
 }
 
+/* contenuto principale nav laterale */
+#logo{
+    width:130px;
+    margin:20px 15px;
+}
+
+/* barra di ricerca */
+.icona-left-nav{
+    width: 25px;
+    margin:5px 10px;
+}
+
+
+/* playlist */
+h4{
+    color:white;
+    font-size: 15px;
+    margin:20px;
+}
+
+
+#playlist{
+    color:#a3a3a3;
+    margin:0 10px;
+    overflow: auto;
+    height: calc(100% - 250px);
+}
+
+.fa-plus{
+    color:black;
+    background-color: #a3a3a3;
+    font-size:20px;
+    padding:10px;
+    margin:0 5px;
+}
+
+.lista-play li{
+ 
+    list-style: none;
+    margin:20px;
+}
+
+/* parte bassa del nav */
+
+.nav-down{
+    margin:10px;
+}
+
+#download{
+    width:25px;
+}
+
+#install{
+    color:#7d7f84;
+    font-size:12px;
+   
+}
+
+
+hr{
+    margin-top: 10px;
+}
+
+#profilo{
+    width:25px;
+    background-color: #7f7f7f;
+    color:white;
+    border-radius: 99999px;
+    margin-top:10px;
+}
+
+#text-profilo{
+    color:white;
+    font-size: 15px;
+   
+}
 
 
 /* CONTENUTO PRINCIPALE MAIN */

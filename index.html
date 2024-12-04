@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
@@ -14,17 +16,84 @@
 
 <body>
     
-    <!-- macro blocco principale struttura -->
+    <!-- MACRO BLOCCO STRUTTURA PRINCIPALE -->
     
     <section id="macro-container">
         
-        <!--  macro blocco laterale di navigazione -->
+        <!--  MACRO BLOCCO DI NAVIGAZIONE LATERALE -->
         <nav id="left-navigation">
+            
+            <!-- contenuto principale nav laterale -->
+            <div>
+                <img src="./img/logo.svg" alt="logo spotify" id="logo">
+            </div>
+            
+            <!-- barra di ricerca -->
+            <div>
+                <img class="icona-left-nav" src="./img/home.svg" alt="img home">
+                <span class="subtitle"> <strong>Home</strong> </span>
+            </div>
+            
+            <div>
+                <img class="icona-left-nav" src="./img/search.svg" alt="img search">
+                <span class="subtitle"> <strong>Cerca</strong></span>
+            </div>
+            
+            <div>
+                <img class="icona-left-nav" src="./img/libreria.svg" alt="img liberia">
+                <span class="subtitle"> <strong>La tua libreria</strong></span>
+            </div>
+            
+            <!-- playlist -->
+            
+            <h4>PLAYLIST</h4>
+            
+            <div id="playlist">
+                <i class="fa-solid fa-plus"></i>
+                <span class="subtitle"> <strong>Crea playlist</strong> </span>
+                
+                
+                <ul class="lista-play">
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    <li class="subtitle"> <strong>Nome Playlist</strong></li>
+                    
+                    
+                </ul>
+                
+                <!-- parte bassa del nav -->
+                <section class="nav-down">
+                    <div>
+                        <img id="download" src="./img/download.svg" alt="download app">
+                        <span id="install"> <strong>Installa app</strong></span>
+                    </div>
+                    <hr>
+                    
+                    <div>
+                        <img id="profilo" src="./img/profile.svg" alt="">
+                        <span id="text-profilo"><strong>John Doe</strong></span>
+                    </div>
+                </section>
+                
+            </div>
+            
+            
             
         </nav>
         
         
-        <!-- blocco contenuto princiaple -->
+        <!-- BLOCCO CONTENUTO PRINCIPALE MAIN  -->
         <main>
             <!-- blocco upgrade-->
             <div id="container-upgrade">
