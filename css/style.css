@@ -26,9 +26,12 @@ body{
 
 /* MACRO BLOCCO DI NAVIGAZIONE LATERALE */
 #macro-container #left-navigation{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
     width:200px;
     background-color: #000000;
+    /* DEBUG */
+    /* height: 100%; */
     
 }
 
@@ -57,8 +60,8 @@ h4{
     color:#a3a3a3;
     margin:0 10px;
     overflow: auto;
-    height: calc(100% - 250px);
-    position: relative;
+    height: 100%;
+  
 }
 
 .fa-plus{
@@ -79,9 +82,8 @@ h4{
 
 .nav-down{
     margin:10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    
+  
 }
 
 #download{
@@ -237,6 +239,9 @@ h2{
     background-color:#282828;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    z-index: 10;
+    bottom: 0;
 }
 
 /* contenuto destro */
@@ -244,6 +249,7 @@ h2{
 .controller-dx{
     display: flex;
     align-items: center;
+   
     margin-left:15px;
     flex-basis:20%;
    
