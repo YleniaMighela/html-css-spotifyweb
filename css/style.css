@@ -19,7 +19,9 @@ body{
     /* background-color: rgb(236, 24, 208); */
 }
 
-
+#logo-small{
+    display: none;
+}
 
 
 
@@ -61,7 +63,7 @@ h4{
     margin:0 10px;
     overflow: auto;
     height: 100%;
-  
+    
 }
 
 .fa-plus{
@@ -73,7 +75,7 @@ h4{
 }
 
 .lista-play li{
- 
+    
     list-style: none;
     margin:20px;
 }
@@ -83,7 +85,7 @@ h4{
 .nav-down{
     margin:10px;
     
-  
+    
 }
 
 #download{
@@ -93,7 +95,7 @@ h4{
 #install{
     color:#7d7f84;
     font-size:12px;
-   
+    
 }
 
 
@@ -112,7 +114,7 @@ hr{
 #text-profilo{
     color:white;
     font-size: 15px;
-   
+    
 }
 
 
@@ -167,6 +169,7 @@ button{
 a{
     font-size:10px;
     text-decoration: none;
+    font-weight: 700;
     color: #72747a;
 }
 
@@ -239,9 +242,9 @@ h2{
     background-color:#282828;
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    /* position: sticky;
     z-index: 10;
-    bottom: 0;
+    bottom: 0; */
 }
 
 /* contenuto destro */
@@ -249,10 +252,10 @@ h2{
 .controller-dx{
     display: flex;
     align-items: center;
-   
+    
     margin-left:15px;
     flex-basis:20%;
-   
+    
 }
 
 .img-small{
@@ -268,20 +271,20 @@ h5{
     margin:0 10px;
 }
 
- /* icone contenuto destro */
- .controller-dx i{
+/* icone contenuto destro */
+.controller-dx i{
     color:#878787;
     margin:10px;
-   
-
+    
+    
 }
 
 /* contenuto centrale */
 .controller-centrale{
     text-align: center;
-    /* flex-basis:60%; */
-
-
+    flex-basis:60%;
+    
+    
 }
 
 .button-play i{
@@ -301,11 +304,14 @@ h5{
     height:5px;
     background-color: #5a5a5a;
     border-radius: 10px;
+    width:250px;
 }
 
 
-.loading.music{
-    width:250px;
+.music{
+    height:5px;
+    width:50px;
+    background-color: white;
 }
 
 
@@ -315,14 +321,14 @@ h5{
 
 .controller-sx{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     text-align: end;
     flex-basis: 20%;
 }
 
 
- .loading.music-due{
+.loading.music-due{
     width:100px;
 }
 
@@ -337,7 +343,7 @@ h5{
 
 /* LAYOUT TABLET */
 @media screen and (max-width:878px){
-
+    
     /* blocco upgrade */
     #container-upgrade{
         display: block;
@@ -345,15 +351,19 @@ h5{
         width: 100%;
     }
     
-
-button{
-   position: absolute;
-   top:2px;
-   right:0;
-}
-
+    
+    button{
+        position: absolute;
+        top:2px;
+        right:0;
+    }
+    
     
     /* blocco navigazione main  */
+    
+    .link-main{
+        margin: 0;
+    }
 
     .link-main {
         flex-wrap: wrap; 
@@ -372,6 +382,7 @@ button{
     
     .cover{
         width:calc(100% /5 );
+        margin:5px;
         
     }
     
@@ -385,19 +396,47 @@ button{
 @media screen and (max-width:668px){
     
     /* blocco navigazione main  */ 
+
+
+    .navigation-main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .link-main li{
-        flex-wrap:nowrap;
         flex-basis:25%;
+        margin:10px;
         
     }
     
+
     /* PRIMO BLOCCO : VISTI RECENTEMENTE */
     
     .cover{
-        width:calc(100% /3);
+        width:45%;
         
+    
     }
+
+
+    .loading .music-due{
+        width:70%;
+     
+    }
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -421,7 +460,24 @@ button{
         
         
     }
-    
+
+    #logo-small{
+        display: block;
+        width:30px;
+        margin:10px;
+    }
+
+    #left-navigation{
+        ;
+
+    }
+
+    #playlist, h4, #install,
+     #text-profilo, .subtitle,
+     #logo{
+        display: none;
+
+    }
     .link-main {
         flex-wrap: wrap; 
         /* flex-basis:calc(100% / 4); */
