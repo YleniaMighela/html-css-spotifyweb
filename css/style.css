@@ -478,6 +478,8 @@ h5{
     /* MACRO BLOCCO DI NAVIGAZIONE */
     #macro-container #left-navigation{
         width:60px;
+        display:flex;
+        justify-content: start;
         
     }
     
@@ -488,6 +490,8 @@ h5{
         
         
     }
+
+    /* contenuto principale nav laterale */
     
     #logo-small{
         display: block;
@@ -504,12 +508,39 @@ h5{
         
     }
     
-    
-    
-    .nav-down{
-        display: block;
+    hr{
+        display: none;
     }
     
+    .nav-down{
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        height: 100%;
+        padding:4px;
+    }
     
+    #download{
+        width:15px;
+        margin:5px;
+    }
+    
+    #profilo{
+        width:20px;
+        margin:5px;
+    }
+
+    /* MACRO BLOCCO INFERIORE */
+
+
+
+
+
+
+
+
+
+
+
 }
 
